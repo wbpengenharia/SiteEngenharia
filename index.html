@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WBP Engenharia — Projetos Elétricos, Estruturais e Hidrossanitários em São Mateus/ES</title>
+<meta name="description" content="Projetos elétricos, estruturais e hidrossanitários com ART/CREA-ES em São Mateus/ES. Compatibilização entre disciplinas, escopo por escrito e documentação pronta para executar. WhatsApp (27) 99799-1343.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.wbpengenharia.com.br/">
+<meta name="theme-color" content="#080B14">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="WBP Engenharia — Projetos Técnicos em São Mateus/ES">
+<meta property="og:description" content="Elétrico, estrutural e hidrossanitário. ART/CREA-ES. São Mateus e região.">
+<meta property="og:url" content="https://www.wbpengenharia.com.br/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=2400&q=80&auto=format&fit=crop">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EngineeringService",
+  "name": "WBP Engenharia",
+  "description": "Projetos elétricos, estruturais e hidrossanitários com ART/CREA-ES em São Mateus/ES.",
+  "telephone": "+5527997991343",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "R. Dália, 234 — San Remo",
+    "addressLocality": "São Mateus",
+    "addressRegion": "ES",
+    "postalCode": "29938-314",
+    "addressCountry": "BR"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "08:00",
+    "closes": "17:30"
+  }
+}
+</script>
+
+<style>
+:root {
+  --ink: #080B14;
+  --ink-2: #0F1420;
+  --ink-3: #1A2130;
+  --slate: #2A3345;
+  --line: #1F2733;
+  --line-2: #2F3846;
+  --mist: #F5F6F8;
+  --mist-2: #EAECEF;
+  --white: #FFFFFF;
+  --accent: #F59E0B;
+  --accent-2: #D97706;
+  --text: #1A1F2C;
+  --text-mute: #5A6475;
+  --header-h: 68px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-h) + 12px);
+}
+
+body {
+  font-family: 'Manrope', system-ui, sans-serif;
+  background: var(--mist);
+  color: var(--text);
+  line-height: 1.65;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+}
+.serif { font-family: 'Instrument Serif', serif; font-weight: 400; }
+.mono { font-family: 'JetBrains Mono', monospace; }
+
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+
+.container { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+
+/* HEADER */
+.header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(8, 11, 20, 0.75);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  height: var(--header-h);
+  display: flex; align-items: center;
+  transition: background 0.3s, border-color 0.3s;
+}
+.header.scrolled {
+  background: rgba(8, 11, 20, 0.96);
+  border-bottom-color: rgba(255,255,255,0.1);
+}
+.header-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  width: 100%;
+}
+.brand {
+  font-family: 'Sora', sans-serif;
+  font-weight: 800; font-size: 19px;
+  color: var(--white);
+  letter-spacing: -0.03em;
+  display: flex; align-items: center; gap: 8px;
+}
+.brand-mark {
+  width: 28px; height: 28px;
+  border: 1.5px solid var(--accent);
+  display: grid; place-items: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--accent);
+  font-weight: 500;
+}
+.brand span { color: var(--accent); }
+
+.nav-desktop { display: flex; align-items: center; gap: 4px; }
+.nav-desktop a {
+  position: relative;
+  padding: 8px 14px;
+  font-size: 13px; font-weight: 500;
+  color: rgba(255,255,255,0.62);
+  transition: color 0.2s;
+}
+.nav-desktop a:hover { color: var(--white); }
+.nav-desktop a.active { color: var(--white); }
+.nav-desktop a.active::after {
+  content: '';
+  position: absolute;
+  bottom: 2px; left: 50%;
+  transform: translateX(-50%);
+  width: 4px; height: 4px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+.nav-cta {
+  background: var(--accent);
+  color: var(--ink) !important;
+  padding: 9px 18px !important;
+  font-weight: 700 !important;
+  font-size: 12.5px !important;
+  transition: background 0.15s;
+  margin-left: 8px;
+}
+.nav-cta:hover { background: #FFB020; }
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.15);
+  color: var(--white);
+  width: 40px; height: 40px;
+  cursor: pointer;
+  align-items: center; justify-content: center;
+  padding: 0;
+}
+.menu-toggle svg { width: 18px; height: 18px; }
+
+@media (max-width: 900px) {
+  .nav-desktop { display: none; }
+  .menu-toggle { display: flex; }
+}
+
+.mobile-menu {
+  position: fixed;
+  top: var(--header-h); left: 0; right: 0; bottom: 0;
+  background: var(--ink);
+  z-index: 99;
+  padding: 24px 24px 100px;
+  display: none;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.mobile-menu.open { display: flex; }
+.mobile-menu a {
+  color: var(--white);
+  font-family: 'Sora', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  display: flex; align-items: center; justify-content: space-between;
+}
+.mobile-menu a::after { content: '→'; color: var(--accent); font-family: 'JetBrains Mono', monospace; font-size: 16px; }
+.mobile-menu .mobile-cta {
+  background: var(--accent);
+  color: var(--ink);
+  text-align: center;
+  justify-content: center;
+  margin-top: 24px;
+  padding: 18px;
+  border: none;
+  font-weight: 700;
+  font-size: 15px;
+  font-family: 'Sora', sans-serif;
+  border-bottom: none;
+}
+.mobile-menu .mobile-cta::after { display: none; }
+
+/* HERO */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: calc(var(--header-h) + 60px) 0 100px;
+  background: var(--ink);
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(135deg, rgba(8,11,20,0.94) 0%, rgba(8,11,20,0.78) 60%, rgba(15,20,32,0.85) 100%),
+    url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=2400&q=80&auto=format&fit=crop') center/cover no-repeat;
+}
+.hero-bg::after {
+  content: '';
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 80px 80px;
+  mask-image: radial-gradient(ellipse at 30% 40%, rgba(0,0,0,0.5), transparent 70%);
+}
+.hero-content {
+  position: relative; z-index: 2;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 72px;
+  align-items: center;
+  width: 100%;
+}
+@media (max-width: 960px) {
+  .hero-content { grid-template-columns: 1fr; gap: 48px; }
+  .hero { padding: calc(var(--header-h) + 40px) 0 80px; min-height: auto; }
+}
+
+.hero-kicker {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--accent);
+  margin-bottom: 28px; display: inline-flex; align-items: center; gap: 12px;
+  padding: 8px 14px; border: 1px solid rgba(245,158,11,0.25);
+  background: rgba(245,158,11,0.06);
+}
+.hero-kicker::before { content: ''; width: 6px; height: 6px; background: var(--accent); border-radius: 50%; }
+
+.hero h1 {
+  font-size: clamp(42px, 6.4vw, 78px);
+  font-weight: 800; line-height: 1; letter-spacing: -0.045em;
+  color: var(--white); margin-bottom: 28px;
+}
+.hero h1 .serif {
+  font-family: 'Instrument Serif', serif; font-style: italic;
+  font-weight: 400; color: var(--accent); display: block; letter-spacing: -0.02em;
+}
+.hero-sub {
+  font-size: 17px; line-height: 1.7; color: rgba(255,255,255,0.72);
+  max-width: 520px; margin-bottom: 40px;
+}
+.hero-sub strong { color: var(--white); font-weight: 600; }
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 40px; }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  padding: 16px 28px; font-family: 'Sora', sans-serif;
+  font-size: 14px; font-weight: 600; border: none; cursor: pointer;
+  transition: transform 0.1s, background 0.15s, box-shadow 0.2s; text-decoration: none;
+}
+.btn:active { transform: scale(0.98); }
+.btn-accent { background: var(--accent); color: var(--ink); box-shadow: 0 4px 20px rgba(245,158,11,0.3); }
+.btn-accent:hover { background: #FFB020; box-shadow: 0 6px 28px rgba(245,158,11,0.45); }
+.btn-ghost { background: rgba(255,255,255,0.05); color: var(--white); border: 1px solid rgba(255,255,255,0.18); backdrop-filter: blur(10px); }
+.btn-ghost:hover { background: rgba(255,255,255,0.1); }
+
+.hero-trust {
+  display: flex; gap: 28px; flex-wrap: wrap;
+  padding-top: 32px; border-top: 1px solid rgba(255,255,255,0.08);
+}
+.hero-trust-item {
+  display: flex; align-items: center; gap: 8px;
+  font-family: 'JetBrains Mono', monospace; font-size: 11px;
+  color: rgba(255,255,255,0.55); letter-spacing: 0.04em;
+}
+.hero-trust-item svg { color: var(--accent); }
+
+.hero-card {
+  background: linear-gradient(180deg, rgba(26,33,48,0.6) 0%, rgba(15,20,32,0.75) 100%);
+  border: 1px solid rgba(255,255,255,0.1); padding: 32px;
+  backdrop-filter: blur(20px) saturate(180%);
+  position: relative;
+}
+.hero-card::before {
+  content: 'CONTATO · DIRETO'; position: absolute; top: 0; right: 20px;
+  transform: translateY(-50%); background: var(--ink); padding: 4px 10px;
+  font-family: 'JetBrains Mono', monospace; font-size: 9px;
+  letter-spacing: 0.12em; color: var(--accent); border: 1px solid rgba(245,158,11,0.3);
+}
+.hero-card-title {
+  font-family: 'Sora', sans-serif; font-size: 18px; font-weight: 700;
+  color: var(--white); margin-bottom: 20px; padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.08); letter-spacing: -0.02em;
+}
+.hero-card-title .serif { font-family: 'Instrument Serif', serif; font-style: italic; color: var(--accent); }
+.hero-card dl { display: grid; gap: 16px; }
+.hero-card-item { display: grid; gap: 3px; }
+.hero-card-label {
+  font-family: 'JetBrains Mono', monospace; font-size: 9.5px;
+  letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.4);
+}
+.hero-card-value {
+  font-family: 'Manrope', sans-serif; font-size: 14px;
+  color: var(--white); font-weight: 500; line-height: 1.4;
+}
+.hero-card-value a { color: var(--accent); border-bottom: 1px solid transparent; transition: border-color 0.15s; }
+.hero-card-value a:hover { border-bottom-color: var(--accent); }
+
+/* TRUST BAR */
+.trust-bar { background: var(--ink-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 20px 0; }
+.trust-bar-inner { display: flex; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
+.trust-bar-item { display: flex; align-items: center; gap: 10px; font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: 0.08em; color: rgba(255,255,255,0.55); text-transform: uppercase; }
+.trust-bar-item svg { color: var(--accent); }
+
+/* SECTIONS */
+.section { padding: 100px 0; scroll-margin-top: calc(var(--header-h) + 12px); }
+.section-white { background: var(--white); }
+.section-mist { background: var(--mist); }
+.section-dark { background: var(--ink); color: var(--white); }
+.section-tag { display: inline-flex; align-items: center; gap: 10px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent-2); margin-bottom: 16px; }
+.section-tag::before { content: ''; width: 24px; height: 1px; background: var(--accent); }
+.section-dark .section-tag { color: var(--accent); }
+.section-header { max-width: 700px; margin-bottom: 56px; }
+.section-header h2 { font-size: clamp(32px, 4.2vw, 52px); margin-bottom: 16px; letter-spacing: -0.035em; }
+.section-header h2 .serif { font-family: 'Instrument Serif', serif; font-style: italic; color: var(--accent-2); font-weight: 400; }
+.section-dark .section-header h2 .serif { color: var(--accent); }
+.section-header p { font-size: 17px; color: var(--text-mute); line-height: 1.65; max-width: 580px; }
+.section-dark .section-header p { color: rgba(255,255,255,0.6); }
+
+/* SOBRE */
+.about-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 72px; align-items: center; }
+@media (max-width: 900px) { .about-grid { grid-template-columns: 1fr; gap: 40px; } }
+.about-content h2 { font-size: clamp(28px, 3.6vw, 42px); margin-bottom: 20px; letter-spacing: -0.03em; }
+.about-content p { font-size: 16px; color: var(--text-mute); line-height: 1.75; margin-bottom: 16px; }
+.about-content p strong { color: var(--text); font-weight: 600; }
+.stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; background: var(--line); border: 1px solid var(--line); }
+.stat-item { background: var(--white); padding: 28px 24px; display: flex; flex-direction: column; gap: 6px; }
+.stat-num { font-family: 'Sora', sans-serif; font-size: 40px; font-weight: 800; color: var(--ink); line-height: 1; letter-spacing: -0.04em; }
+.stat-num span { color: var(--accent-2); }
+.stat-label { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-mute); line-height: 1.4; }
+
+/* SERVIÇOS */
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+@media (max-width: 900px) { .services-grid { grid-template-columns: 1fr; } }
+.service-card { background: var(--white); border: 1px solid var(--line); padding: 36px 32px; display: flex; flex-direction: column; transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s; position: relative; }
+.service-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--accent); transform: scaleX(0); transform-origin: left; transition: transform 0.35s ease; }
+.service-card:hover { border-color: var(--slate); box-shadow: 0 16px 48px -20px rgba(8,11,20,0.18); transform: translateY(-4px); }
+.service-card:hover::before { transform: scaleX(1); }
+.service-icon { width: 52px; height: 52px; background: var(--ink); display: grid; place-items: center; margin-bottom: 24px; color: var(--accent); }
+.service-card h3 { font-size: 22px; margin-bottom: 12px; letter-spacing: -0.02em; }
+.service-card p { font-size: 14.5px; color: var(--text-mute); line-height: 1.65; margin-bottom: 24px; flex-grow: 1; }
+.service-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 24px; padding-top: 20px; border-top: 1px dashed var(--line); }
+.service-tag { font-family: 'JetBrains Mono', monospace; font-size: 9.5px; letter-spacing: 0.05em; padding: 5px 9px; background: var(--mist); color: var(--text-mute); border: 1px solid var(--line); }
+.service-link { display: inline-flex; align-items: center; gap: 8px; font-family: 'Sora', sans-serif; font-size: 13.5px; font-weight: 600; color: var(--ink); transition: color 0.15s, gap 0.2s; }
+.service-link:hover { color: var(--accent-2); gap: 12px; }
+
+/* PROCESSO */
+.process-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; border-top: 1px solid var(--line-2); }
+@media (max-width: 900px) { .process-grid { grid-template-columns: 1fr; border-top: none; } }
+.process-step { padding: 32px 24px; border-right: 1px solid var(--line-2); position: relative; }
+.process-step:hover { background: var(--ink-2); }
+@media (max-width: 900px) { .process-step { border-right: none; border-bottom: 1px solid var(--line-2); padding: 28px 0; } }
+.process-step:last-child { border-right: none; }
+.process-step::before { content: ''; position: absolute; top: -4px; left: 24px; width: 7px; height: 7px; background: var(--accent); border-radius: 50%; box-shadow: 0 0 0 4px var(--ink); }
+@media (max-width: 900px) { .process-step::before { left: 0; top: 24px; } }
+.step-num { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--accent); letter-spacing: 0.1em; margin-bottom: 16px; display: block; font-weight: 500; }
+.step-title { font-family: 'Sora', sans-serif; font-size: 16px; font-weight: 600; color: var(--white); margin-bottom: 8px; line-height: 1.3; }
+.step-desc { font-size: 13px; color: rgba(255,255,255,0.55); line-height: 1.6; }
+
+/* PROJETOS */
+.projects-grid { display: grid; grid-template-columns: 1.4fr 0.6fr; grid-template-rows: auto auto; gap: 20px; }
+@media (max-width: 800px) { .projects-grid { grid-template-columns: 1fr; } }
+.project-card { background: var(--white); border: 1px solid var(--line); overflow: hidden; transition: box-shadow 0.25s, transform 0.25s; display: flex; flex-direction: column; }
+.project-card:hover { box-shadow: 0 16px 48px -16px rgba(8,11,20,0.15); transform: translateY(-2px); }
+.project-card.featured { grid-row: span 2; }
+.project-image { aspect-ratio: 16/10; background-size: cover; background-position: center; position: relative; }
+.project-card.featured .project-image { aspect-ratio: 16/11; }
+.project-image::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(8,11,20,0.5) 0%, transparent 60%); }
+.project-tag { position: absolute; top: 16px; left: 16px; z-index: 2; background: var(--accent); color: var(--ink); padding: 5px 10px; font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; }
+.project-year { position: absolute; top: 16px; right: 16px; z-index: 2; background: rgba(8,11,20,0.75); color: var(--white); padding: 5px 10px; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.06em; }
+.project-body { padding: 24px; display: flex; flex-direction: column; flex-grow: 1; }
+.project-body h3 { font-size: 18px; margin-bottom: 6px; }
+.project-card.featured .project-body h3 { font-size: 22px; }
+.project-disc { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.06em; color: var(--text-mute); text-transform: uppercase; margin-bottom: 20px; }
+.project-stats { display: flex; gap: 24px; padding-top: 16px; border-top: 1px solid var(--line); margin-top: auto; }
+.project-stat { display: flex; flex-direction: column; gap: 2px; }
+.project-stat-num { font-family: 'Sora', sans-serif; font-size: 20px; font-weight: 700; color: var(--ink); line-height: 1; }
+.project-stat-num b { color: var(--accent-2); font-weight: 800; }
+.project-stat-label { font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-mute); }
+
+/* DEPOIMENTOS */
+.testimonials-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+@media (max-width: 700px) { .testimonials-grid { grid-template-columns: 1fr; } }
+.testimonial { background: var(--white); border: 1px solid var(--line); padding: 32px; display: flex; flex-direction: column; gap: 20px; }
+.testimonial-quote-mark { font-family: 'Instrument Serif', serif; font-size: 64px; color: var(--accent); line-height: 0.5; margin-bottom: 8px; }
+.testimonial-quote { font-size: 15px; line-height: 1.7; color: var(--text); }
+.testimonial-author { display: flex; align-items: center; gap: 12px; padding-top: 20px; border-top: 1px solid var(--line); margin-top: auto; }
+.testimonial-avatar { width: 40px; height: 40px; background: var(--ink); color: var(--accent); display: grid; place-items: center; font-family: 'Sora', sans-serif; font-size: 15px; font-weight: 700; }
+.testimonial-name { font-family: 'Sora', sans-serif; font-size: 14px; font-weight: 600; color: var(--ink); }
+.testimonial-role { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--text-mute); letter-spacing: 0.04em; margin-top: 2px; }
+
+/* FAQ */
+.faq-list { max-width: 820px; margin: 0 auto; }
+.faq-item { border-bottom: 1px solid var(--line); }
+.faq-item:first-child { border-top: 1px solid var(--line); }
+.faq-item summary { padding: 24px 0; cursor: pointer; list-style: none; font-family: 'Sora', sans-serif; font-size: 17px; font-weight: 500; color: var(--ink); display: flex; justify-content: space-between; align-items: center; gap: 20px; transition: color 0.15s; }
+.faq-item summary:hover { color: var(--accent-2); }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: '+'; font-family: 'JetBrains Mono', monospace; color: var(--accent); font-size: 22px; font-weight: 400; flex-shrink: 0; width: 24px; text-align: center; transition: transform 0.2s; }
+.faq-item[open] summary::after { content: '−'; }
+.faq-answer { padding: 0 0 24px; font-size: 15px; color: var(--text-mute); line-height: 1.7; max-width: 680px; }
+
+/* CTA */
+.cta-section { padding: 120px 0; background: var(--ink); color: var(--white); position: relative; overflow: hidden; }
+.cta-section::before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(245,158,11,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(245,158,11,0.03) 1px, transparent 1px); background-size: 60px 60px; mask-image: radial-gradient(ellipse at 70% 40%, rgba(0,0,0,0.8), transparent 70%); }
+.cta-grid { position: relative; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 64px; align-items: center; }
+@media (max-width: 800px) { .cta-grid { grid-template-columns: 1fr; gap: 40px; } }
+.cta-section h2 { font-size: clamp(36px, 5.2vw, 60px); line-height: 1.02; margin-bottom: 20px; letter-spacing: -0.04em; }
+.cta-section h2 .serif { font-family: 'Instrument Serif', serif; font-style: italic; color: var(--accent); }
+.cta-section p { font-size: 17px; color: rgba(255,255,255,0.65); max-width: 460px; line-height: 1.65; }
+.cta-actions { display: flex; flex-direction: column; gap: 14px; }
+.cta-actions .btn { padding: 20px 28px; font-size: 14.5px; justify-content: space-between; }
+.cta-actions .btn svg { transition: transform 0.2s; }
+.cta-actions .btn:hover svg { transform: translateX(4px); }
+.cta-meta { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: 0.06em; color: rgba(255,255,255,0.4); text-align: center; padding-top: 12px; }
+
+/* FOOTER */
+.footer { background: var(--ink-2); color: rgba(255,255,255,0.5); padding: 60px 0 24px; border-top: 1px solid var(--line); }
+.footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+@media (max-width: 900px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 500px) { .footer-grid { grid-template-columns: 1fr; } }
+.footer-brand { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+.footer-brand .brand-mark { width: 32px; height: 32px; border-color: var(--accent); color: var(--accent); font-size: 11px; }
+.footer-brand-text { font-family: 'Sora', sans-serif; font-size: 18px; font-weight: 800; color: var(--white); letter-spacing: -0.02em; }
+.footer-brand-text span { color: var(--accent); }
+.footer-tagline { font-size: 13px; max-width: 280px; line-height: 1.65; color: rgba(255,255,255,0.5); }
+.footer h5 { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); margin-bottom: 16px; font-weight: 500; }
+.footer ul { list-style: none; }
+.footer li, .footer a { font-size: 13px; line-height: 2; color: rgba(255,255,255,0.55); transition: color 0.15s; }
+.footer a:hover { color: var(--accent); }
+.footer-bottom { padding-top: 24px; display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.05em; color: rgba(255,255,255,0.3); }
+
+/* WHATSAPP FLOAT */
+.wa-float { position: fixed; bottom: 24px; right: 24px; width: 58px; height: 58px; background: #25D366; color: var(--white); border-radius: 50%; display: grid; place-items: center; box-shadow: 0 6px 24px rgba(37,211,102,0.45); z-index: 200; transition: transform 0.2s, box-shadow 0.2s; }
+.wa-float:hover { transform: scale(1.08); box-shadow: 0 8px 32px rgba(37,211,102,0.6); }
+.wa-float svg { width: 28px; height: 28px; }
+.wa-float::before { content: ''; position: absolute; inset: -4px; border-radius: 50%; border: 2px solid #25D366; opacity: 0; animation: waPulse 2.5s ease-out infinite; }
+@keyframes waPulse { 0% { opacity: 0.7; transform: scale(1); } 100% { opacity: 0; transform: scale(1.4); } }
+
+/* STICKY MOBILE CTA */
+.sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: rgba(8,11,20,0.98); backdrop-filter: blur(20px); border-top: 1px solid rgba(245,158,11,0.3); padding: 12px 16px; z-index: 90; gap: 8px; }
+@media (max-width: 900px) { .sticky-cta { display: flex; } }
+.sticky-cta a { flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 14px; font-family: 'Sora', sans-serif; font-size: 13px; font-weight: 700; text-decoration: none; transition: background 0.15s; }
+.sticky-cta .primary { background: var(--accent); color: var(--ink); }
+.sticky-cta .primary:hover { background: #FFB020; }
+.sticky-cta .secondary { background: rgba(255,255,255,0.08); color: var(--white); border: 1px solid rgba(255,255,255,0.15); }
+.sticky-cta svg { width: 16px; height: 16px; }
+
+@media (max-width: 900px) { body { padding-bottom: 0; } .footer { padding-bottom: 80px; } .wa-float { bottom: 84px; } }
+
+/* BACK TO TOP */
+.back-top { position: fixed; bottom: 24px; left: 24px; width: 44px; height: 44px; background: var(--white); color: var(--ink); border: 1px solid var(--line); display: grid; place-items: center; cursor: pointer; z-index: 90; opacity: 0; pointer-events: none; transition: opacity 0.3s, transform 0.2s; box-shadow: 0 4px 16px rgba(8,11,20,0.12); }
+.back-top.visible { opacity: 1; pointer-events: auto; }
+.back-top:hover { transform: translateY(-2px); }
+.back-top svg { width: 18px; height: 18px; }
+@media (max-width: 900px) { .back-top { bottom: 84px; left: 16px; } }
+
+/* REVEAL */
+.rv { opacity: 0; transform: translateY(24px); transition: opacity 0.7s cubic-bezier(0.16,1,0.3,1), transform 0.7s cubic-bezier(0.16,1,0.3,1); }
+.rv.on { opacity: 1; transform: none; }
+.rv-delay-1 { transition-delay: 0.08s; }
+.rv-delay-2 { transition-delay: 0.16s; }
+.rv-delay-3 { transition-delay: 0.24s; }
+
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; } }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+</style>
+</head>
+<body>
+
+<a href="#main" class="sr-only">Pular para o conteúdo</a>
+
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="#" class="brand">
+      <span class="brand-mark">WBP</span>
+      Engenharia<span>.</span>
+    </a>
+    <nav class="nav-desktop" id="navDesktop">
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#processo">Processo</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#duvidas">Dúvidas</a>
+      <a href="https://wa.me/5527997991343?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20WBP.%20Preciso%20de%20uma%20proposta%20t%C3%A9cnica." class="nav-cta" target="_blank" rel="noopener">Solicitar proposta</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#sobre">Sobre</a>
+  <a href="#servicos">Serviços</a>
+  <a href="#processo">Processo</a>
+  <a href="#projetos">Projetos</a>
+  <a href="#duvidas">Dúvidas</a>
+  <a href="#contato">Contato</a>
+  <a href="https://wa.me/5527997991343?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20WBP.%20Preciso%20de%20uma%20proposta%20t%C3%A9cnica." class="mobile-cta" target="_blank" rel="noopener">Solicitar proposta no WhatsApp</a>
+</div>
+
+<main id="main">
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="container hero-content">
+    <div class="rv">
+      <div class="hero-kicker">São Mateus/ES · Projetos de engenharia</div>
+      <h1>Projetos que<br><span class="serif">resolvem.</span></h1>
+      <p class="hero-sub"><strong>Elétrico, estrutural e hidrossanitário</strong> com ART/CREA-ES. Compatibilização entre disciplinas e documentação pronta para executar, orçar e aprovar — sem retrabalho no canteiro.</p>
+      <div class="hero-actions">
+        <a href="https://wa.me/5527997991343?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20WBP.%20Meu%20projeto%20%C3%A9%3A%20%5Bel%C3%A9trico%2Festrutural%2Fhidrossanit%C3%A1rio%5D.%20Minha%20cidade%3A%20%5Bcidade%5D." class="btn btn-accent" target="_blank" rel="noopener">Falar no WhatsApp <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        <a href="#servicos" class="btn btn-ghost">Ver serviços</a>
+      </div>
+      <div class="hero-trust">
+        <div class="hero-trust-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> CREA-ES ativo</div>
+        <div class="hero-trust-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> ART por projeto</div>
+        <div class="hero-trust-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Resposta em 1 dia útil</div>
+      </div>
+    </div>
+    <aside class="hero-card rv rv-delay-1">
+      <div class="hero-card-title">WBP <span class="serif">Engenharia</span></div>
+      <dl>
+        <div class="hero-card-item"><dt class="hero-card-label">Responsável</dt><dd class="hero-card-value">CREA-ES · [inserir número]</dd></div>
+        <div class="hero-card-item"><dt class="hero-card-label">Endereço</dt><dd class="hero-card-value">R. Dália, 234 — San Remo<br>São Mateus/ES · 29938-314</dd></div>
+        <div class="hero-card-item"><dt class="hero-card-label">WhatsApp</dt><dd class="hero-card-value"><a href="https://wa.me/5527997991343" target="_blank" rel="noopener">(27) 99799-1343</a></dd></div>
+        <div class="hero-card-item"><dt class="hero-card-label">Horário</dt><dd class="hero-card-value">Seg. a sex., até 17h30</dd></div>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<div class="trust-bar">
+  <div class="container trust-bar-inner">
+    <div class="trust-bar-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6z"/></svg> NBR 5410 · 5419</div>
+    <div class="trust-bar-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6z"/></svg> NBR 6118 · 8681</div>
+    <div class="trust-bar-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6z"/></svg> NBR 5626 · 8160 · 10844</div>
+    <div class="trust-bar-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6z"/></svg> Compatibilização CAD / BIM</div>
+  </div>
+</div>
+
+<section class="section section-white" id="sobre">
+  <div class="container about-grid">
+    <div class="about-content rv">
+      <div class="section-tag">00 — Sobre</div>
+      <h2>Engenharia com <span class="serif" style="color:var(--accent-2);">responsabilidade técnica.</span></h2>
+      <p>Cada projeto da WBP é assinado por engenheiro registrado no <strong>CREA-ES</strong>, com <strong>ART emitida</strong> e documentação completa entregue junto.</p>
+      <p>O foco é entregar projetos compatibilizados — elétrico, estrutura e hidráulica desenhados juntos — prontos para o canteiro e para a aprovação, sem retrabalho.</p>
+      <p>Atendimento em <strong>São Mateus, Jaguaré, Pinheiros, Pedro Canário, Conceição da Barra, Boa Esperança</strong> e região.</p>
+    </div>
+    <div class="stats-grid rv rv-delay-1">
+      <div class="stat-item"><div class="stat-num">+80<span>.</span></div><div class="stat-label">Projetos entregues</div></div>
+      <div class="stat-item"><div class="stat-num">3<span>.</span></div><div class="stat-label">Disciplinas integradas</div></div>
+      <div class="stat-item"><div class="stat-num">100<span>%</span></div><div class="stat-label">Com ART / CREA-ES</div></div>
+      <div class="stat-item"><div class="stat-num">6<span>.</span></div><div class="stat-label">Cidades atendidas</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-mist" id="servicos">
+  <div class="container">
+    <div class="section-header rv">
+      <div class="section-tag">01 — Serviços</div>
+      <h2>Três disciplinas, <span class="serif">uma responsabilidade.</span></h2>
+      <p>Escopo definido por escrito antes de qualquer desenho. Cálculo, memorial e ART em cada entrega.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card rv">
+        <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <h3>Projeto Elétrico</h3>
+        <p>Instalações de baixa tensão com dimensionamento seguro, quadros organizados e documentação para o eletricista executar sem dúvida.</p>
+        <div class="service-tags"><span class="service-tag">NBR 5410</span><span class="service-tag">NBR 5419</span><span class="service-tag">SPDA</span></div>
+        <a href="https://wa.me/5527997991343?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20WBP.%20Preciso%20de%20projeto%20el%C3%A9trico." class="service-link" target="_blank" rel="noopener">Solicitar proposta <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="service-card rv rv-delay-1">
+        <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M3 21V9l9-6 9 6v12M9 21v-6h6v6"/></svg></div>
+        <h3>Projeto Estrutural</h3>
+        <p>Cálculo e detalhamento de estruturas em concreto armado e metálicas. Fundações, vigas, pilares, lajes e reforços com detalhamento executivo.</p>
+        <div class="service-tags"><span class="service-tag">NBR 6118</span><span class="service-tag">NBR 8681</span><span class="service-tag">Concreto / Metal</span></div>
+        <a href="https://wa.me/5527997991343?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20WBP.%20Preciso%20de%20projeto%20estrutural." class="service-link" target="_blank" rel="noopener">Solicitar proposta <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="service-card rv rv-delay-2">
+        <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2s-6 7-6 12a6 6 0 0 0 12 0c0-5-6-12-6-12z"/></svg></div>
+        <h3>Projeto Hidrossanitário</h3>
+        <p>Água fria, água quente, esgoto e drenagem dimensionados para o uso real do edifício. Sem bomba subdimensionada, sem caimento improvisado.</p>
+        <div class="service-tags"><span class="service-tag">NBR 5626</span><span class="service-tag">NBR 8160</span><span class="service-tag">NBR 10844</span></div>
+        <a href="https://wa.me/5527997991343?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20WBP.%20Preciso%20de%20projeto%20hidrossanit%C3%A1rio." class="service-link" target="_blank" rel="noopener">Solicitar proposta <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark" id="processo">
+  <div class="container">
+    <div class="section-header rv">
+      <div class="section-tag">02 — Processo</div>
+      <h2 style="color: var(--white);">Do contato à entrega <span class="serif">com ART.</span></h2>
+      <p>Sem etapa surpresa. Você sabe o que recebe, quando e como.</p>
+    </div>
+    <div class="process-grid">
+      <div class="process-step"><span class="step-num">01</span><div class="step-title">Contato e levantamento</div><div class="step-desc">Demanda, plantas existentes e visita técnica quando necessário.</div></div>
+      <div class="process-step"><span class="step-num">02</span><div class="step-title">Proposta técnica</div><div class="step-desc">Escopo, prazo e entregáveis por escrito. Antes de qualquer desenho.</div></div>
+      <div class="process-step"><span class="step-num">03</span><div class="step-title">Desenvolvimento</div><div class="step-desc">Cálculo, desenho, memoriais e compatibilização entre disciplinas.</div></div>
+      <div class="process-step"><span class="step-num">04</span><div class="step-title">Entrega com ART</div><div class="step-desc">Pranchas, memoriais e documentos assinados pelo engenheiro.</div></div>
+      <div class="process-step"><span class="step-num">05</span><div class="step-title">Suporte pós-entrega</div><div class="step-desc">Dúvidas durante orçamento, aprovação e execução da obra.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-mist" id="projetos">
+  <div class="container">
+    <div class="section-header rv">
+      <div class="section-tag">03 — Projetos</div>
+      <h2>Entregas <span class="serif">recentes.</span></h2>
+      <p>Casos reais com contexto técnico. Fotos e pranchas completas sob solicitação.</p>
+    </div>
+    <div class="projects-grid">
+      <article class="project-card featured rv">
+        <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80&auto=format&fit=crop');"><span class="project-tag">Residencial</span><span class="project-year">2024</span></div>
+        <div class="project-body">
+          <h3>Residência unifamiliar em Guriri</h3>
+          <div class="project-disc">Elétrico · Estrutural · Hidrossanitário</div>
+          <div class="project-stats"><div class="project-stat"><div class="project-stat-num"><b>280</b> m²</div><div class="project-stat-label">Área</div></div><div class="project-stat"><div class="project-stat-num"><b>3</b></div><div class="project-stat-label">Disciplinas</div></div><div class="project-stat"><div class="project-stat-num"><b>22</b> d</div><div class="project-stat-label">Prazo</div></div></div>
+        </div>
+      </article>
+      <article class="project-card rv rv-delay-1">
+        <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800&q=80&auto=format&fit=crop');"><span class="project-tag">Comercial</span><span class="project-year">2024</span></div>
+        <div class="project-body">
+          <h3>Loja comercial no Centro</h3>
+          <div class="project-disc">Estrutural · Elétrico</div>
+          <div class="project-stats"><div class="project-stat"><div class="project-stat-num"><b>450</b> m²</div><div class="project-stat-label">Área</div></div><div class="project-stat"><div class="project-stat-num"><b>35</b> d</div><div class="project-stat-label">Prazo</div></div></div>
+        </div>
+      </article>
+      <article class="project-card rv rv-delay-2">
+        <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80&auto=format&fit=crop');"><span class="project-tag">Industrial</span><span class="project-year">2023</span></div>
+        <div class="project-body">
+          <h3>Regularização industrial</h3>
+          <div class="project-disc">Elétrico · Laudo com ART</div>
+          <div class="project-stats"><div class="project-stat"><div class="project-stat-num"><b>1.200</b> m²</div><div class="project-stat-label">Área</div></div><div class="project-stat"><div class="project-stat-num"><b>ART</b></div><div class="project-stat-label">Emitida</div></div></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-white" id="depoimentos">
+  <div class="container">
+    <div class="section-header rv">
+      <div class="section-tag">04 — Depoimentos</div>
+      <h2>O que dizem <span class="serif">quem contratou.</span></h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial rv">
+        <div class="testimonial-quote-mark">"</div>
+        <p class="testimonial-quote">A compatibilização entre elétrico e hidráulico evitou uma série de retrabalhos na obra. Entregaram dentro do prazo e com toda a documentação.</p>
+        <div class="testimonial-author"><div class="testimonial-avatar">C</div><div><div class="testimonial-name">[Nome do cliente]</div><div class="testimonial-role">Construtora · São Mateus/ES</div></div></div>
+      </div>
+      <div class="testimonial rv rv-delay-1">
+        <div class="testimonial-quote-mark">"</div>
+        <p class="testimonial-quote">Precisávamos regularizar as instalações elétricas da indústria. A WBP resolveu o laudo e a ART sem burocracia desnecessária.</p>
+        <div class="testimonial-author"><div class="testimonial-avatar">I</div><div><div class="testimonial-name">[Nome do cliente]</div><div class="testimonial-role">Indústria · Jaguaré/ES</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-mist" id="duvidas">
+  <div class="container">
+    <div class="section-header rv" style="text-align: center; margin-left: auto; margin-right: auto;">
+      <div class="section-tag" style="justify-content: center;">05 — Dúvidas</div>
+      <h2 style="text-align: center;">Perguntas <span class="serif">diretas.</span></h2>
+    </div>
+    <div class="faq-list rv">
+      <details class="faq-item"><summary>Vocês emitem ART?</summary><div class="faq-answer">Sim. Cada projeto é assinado por engenheiro registrado no CREA-ES, com ART emitida e documentação completa entregue junto.</div></details>
+      <details class="faq-item"><summary>Atendem reforma e regularização?</summary><div class="faq-answer">Sim. Obra nova, reforma, ampliação e regularização de instalações existentes. Em reformas, o levantamento em campo é obrigatório para dimensionar corretamente.</div></details>
+      <details class="faq-item"><summary>Vocês compatibilizam com o projeto arquitetônico?</summary><div class="faq-answer">Sempre que possível, e é o que recomendamos. A compatibilização entre disciplinas e com a arquitetura é o que evita retrabalho no canteiro e surpresas no orçamento.</div></details>
+      <details class="faq-item"><summary>Quais cidades vocês atendem?</summary><div class="faq-answer">Sede em São Mateus/ES. Atendemos também Jaguaré, Pinheiros, Pedro Canário, Conceição da Barra, Boa Esperança e região. Para obras maiores, consultar disponibilidade.</div></details>
+      <details class="faq-item"><summary>Qual o prazo médio de entrega?</summary><div class="faq-answer">Residenciais: 15 a 30 dias. Comerciais, industriais ou com múltiplas disciplinas: prazo definido na proposta técnica, conforme escopo.</div></details>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section" id="contato">
+  <div class="container cta-grid">
+    <div class="rv">
+      <div class="section-tag" style="color: var(--accent);">06 — Contato</div>
+      <h2>Vamos falar do <span class="serif">seu projeto.</span></h2>
+      <p>Envie sua demanda pelo WhatsApp. Retornamos em até 1 dia útil com uma análise inicial e proposta objetiva.</p>
+    </div>
+    <div class="cta-actions rv rv-delay-1">
+      <a href="https://wa.me/5527997991343?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20WBP.%0A%0AProjeto%3A%20%5Bel%C3%A9trico%2Festrutural%2Fhidrossanit%C3%A1rio%5D%0ACidade%3A%20%5Bcidade%5D%0AEtapa%3A%20%5Bobra%20nova%2Freforma%2Fregulariza%C3%A7%C3%A3o%5D%0A%C3%81rea%20aprox.%3A%20%5Bm%C2%B2%5D" class="btn btn-accent" target="_blank" rel="noopener"><span>Abrir WhatsApp</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="https://wa.me/5527997991343?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20WBP.%20Preciso%20de%20uma%20proposta%20t%C3%A9cnica." class="btn btn-ghost" target="_blank" rel="noopener"><span>Prefiro falar direto</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <div class="cta-meta">(27) 99799-1343 · seg-sex até 17h30</div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><span class="brand-mark">WBP</span><span class="footer-brand-text">Engenharia<span>.</span></span></div>
+        <p class="footer-tagline">Projetos elétricos, estruturais e hidrossanitários com responsabilidade técnica em São Mateus e região.</p>
+      </div>
+      <div>
+        <h5>Contato</h5>
+        <ul><li>R. Dália, 234 — San Remo</li><li>São Mateus/ES · 29938-314</li><li><a href="https://wa.me/5527997991343" target="_blank" rel="noopener">(27) 99799-1343</a></li></ul>
+      </div>
+      <div>
+        <h5>Serviços</h5>
+        <ul><li><a href="#servicos">Projeto Elétrico</a></li><li><a href="#servicos">Projeto Estrutural</a></li><li><a href="#servicos">Projeto Hidrossanitário</a></li></ul>
+      </div>
+      <div>
+        <h5>Institucional</h5>
+        <ul><li><a href="#sobre">Sobre</a></li><li><a href="#processo">Processo</a></li><li><a href="#projetos">Projetos</a></li><li><a href="#duvidas">Dúvidas</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom"><div>© 2026 WBP Engenharia · CREA-ES [inserir número]</div><div>São Mateus / ES</div></div>
+  </div>
+</footer>
+
+<button class="back-top" id="backTop" aria-label="Voltar ao topo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+
+<a href="https://wa.me/5527997991343?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20WBP.%20Preciso%20de%20uma%20proposta%20t%C3%A9cnica." class="wa-float" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-1.5-.7-2.6-1.9-3.4-3.3-.2-.4.2-.4.5-.9.1-.2.1-.4 0-.5-.1-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.3 5.2 4.6 1.9.8 2.7.9 3.6.7.6-.1 1.8-.7 2-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.3z M12 2C6.5 2 2 6.5 2 12c0 1.7.5 3.4 1.3 4.9L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg></a>
+
+<div class="sticky-cta">
+  <a href="https://wa.me/5527997991343?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20WBP.%20Preciso%20de%20uma%20proposta%20t%C3%A9cnica." class="primary" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-1.5-.7-2.6-1.9-3.4-3.3-.2-.4.2-.4.5-.9.1-.2.1-.4 0-.5-.1-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.3 5.2 4.6 1.9.8 2.7.9 3.6.7.6-.1 1.8-.7 2-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.3z M12 2C6.5 2 2 6.5 2 12c0 1.7.5 3.4 1.3 4.9L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg> WhatsApp</a>
+  <a href="tel:+5527997991343" class="secondary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Ligar</a>
+</div>
+
+<script>
+(function() {
+  'use strict';
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const iconOpen = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>';
+  const iconClose = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>';
+
+  function setMenu(open) {
+    mobileMenu.classList.toggle('open', open);
+    menuToggle.setAttribute('aria-expanded', String(open));
+    menuToggle.innerHTML = open ? iconClose : iconOpen;
+    document.body.style.overflow = open ? 'hidden' : '';
+  }
+
+  menuToggle.addEventListener('click', () => setMenu(!mobileMenu.classList.contains('open')));
+  mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setTimeout(() => setMenu(false), 100)));
+  window.addEventListener('resize', () => { if (window.innerWidth >= 900) setMenu(false); });
+
+  const header = document.getElementById('header');
+  window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 20), { passive: true });
+
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('#navDesktop a[href^="#"]');
+  if ('IntersectionObserver' in window && sections.length) {
+    const navObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          navLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === '#' + id));
+        }
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    sections.forEach(section => navObserver.observe(section));
+  }
+
+  if ('IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) { entry.target.classList.add('on'); revealObserver.unobserve(entry.target); }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.rv').forEach(el => revealObserver.observe(el));
+  } else {
+    document.querySelectorAll('.rv').forEach(el => el.classList.add('on'));
+  }
+
+  const backTop = document.getElementById('backTop');
+  window.addEventListener('scroll', () => backTop.classList.toggle('visible', window.scrollY > 600), { passive: true });
+  backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+})();
+</script>
+</body>
+</html>
